@@ -4,3 +4,18 @@
 <app-inline-style></app-inline-style>
 <app-student-list></app-student-list>
 <app-sign-up></app-sign-up>
+<button (click)="getName()">Click Me</button>
+<button (click)="getName_1('Hello! ','AsadUllah')">Click myName</button>
+<br>
+<br>
+<button (click)="getData('AsadUllah')">Click it</button>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="Event keyup">
+<br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Event keydown">
+<br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="Event blur">
+<br>
+<input type="text" #box3 (input)="getData(box3.value)" placeholder="Event input">
+
+<h1 (mouseover)="getData('over')">Event Mouseover</h1>
+<h1 (mouseleave)="getData('leave')">Event mouseleave</h1>
