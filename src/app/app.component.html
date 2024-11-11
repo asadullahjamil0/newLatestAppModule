@@ -21,5 +21,9 @@
 <h1 (mouseleave)="getData('leave')">Event mouseleave</h1>
 
 <input type="text" placeholder="Enter your city name" #city name="username">
-<button (click)="getData(city.name)">Get value</button>
+<button (click)="getData(city.value)">Get value</button>
 <p>Box value is: {{displayVal}}</p>
+
+<button (click)="counter('')">--</button>
+<p>Counter value: {{count}}</p>
+<button (click)="counter('add')">++</button>
