@@ -19,4 +19,7 @@
 
 <h1 (mouseover)="getData('over')">Event Mouseover</h1>
 <h1 (mouseleave)="getData('leave')">Event mouseleave</h1>
-<h1 (mouseleave)="getData('leave')">Event mouseleave</h1>
+
+<input type="text" placeholder="Enter your city name" #city name="username">
+<button (click)="getData(city.name)">Get value</button>
+<p>Box value is: {{displayVal}}</p>

@@ -14,7 +14,9 @@ export class AppComponent {
   getName_1(name: any, lastName: any) {
     alert(name + lastName);
   }
+  displayVal: string = '';
   getData(val: any) {
-    console.log(val);
+    console.warn(val);
+    this.displayVal = val;
   }
 }
