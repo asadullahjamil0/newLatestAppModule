@@ -27,3 +27,27 @@
 <button (click)="counter('')">--</button>
 <p>Counter value: {{count}}</p>
 <button (click)="counter('add')">++</button>
+
+<br> <br>
+<input type="text" name="user-name" value={{name}} disabled={{disable}}>
+<br> <br>
+<input type="text" name="user-name" [value]=name [disabled]=disable>
+<br> <br>
+<button (click)="getChange()">Change</button>
+<br> <br>
+
+<h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+
+<ng-template #ifBlock>
+    <h1>
+        If condition
+    </h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>
+        code false by false
+    </h1>
+</ng-template>
+<br> <br>
+<button (click)="changeCondition()">Condition Change</button>
+<br> <br>

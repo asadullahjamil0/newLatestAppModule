@@ -27,5 +27,16 @@ export class AppComponent {
     type === 'add' ? this.count++ : this.count--;
   }
 
+  name = 'AsaduLLah';
+  disable = true;
+
+  getChange() {
+    this.disable === true ? this.disable = false : this.disable = true;
+  }
+  show = false;
+  changeCondition() {
+    this.show === false ? this.show = true : this.show = false;
+  }
+
 }
 
