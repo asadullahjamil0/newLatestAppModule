@@ -86,5 +86,8 @@
     <ul *ngFor="let account of user.socialAccounts">
         <li>{{account}}</li>
     </ul>
-
 </ul>
+
+<!-- Style Binding -->
+<h1 [style.color]="colorHeading" [style.backgroundColor]="bgColor">Style Binding</h1>
+<button (click)="changeColor()">Change Color</button>

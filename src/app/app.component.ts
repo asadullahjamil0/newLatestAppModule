@@ -54,6 +54,13 @@ export class AppComponent {
     { name: 'megan', phone: '3462366', email: 'megan@learn.com', socialAccounts: ['insta', 'youtube', 'yahoo'] },
 
   ];
+  colorHeading = 'green';
+  bgColor = 'red';
+  changeColor() {
+    this.colorHeading = 'blue';
+    this.bgColor = 'black';
+  }
+
 
 }
 
