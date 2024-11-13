@@ -41,6 +41,13 @@ export class AppComponent {
   changeString() {
     this.color === 'green' ? this.color = 'red' : this.color = 'blue';
   }
+  users = ['AsadUllah', 'Bilal', 'husnain', 'umer'];
+  userDetails = [
+    { name: 'Asadullah', phone: '9023904', email: 'asad@learn.com' },
+    { name: 'Bial', phone: '1023941', email: 'bilal@learn.com' },
+    { name: 'Husnain', phone: '2723451', email: 'husnain@learn.com' },
+    { name: 'Umer', phone: '0923413', email: 'umer@learn.com' },
+  ];
 
 }
 

@@ -63,3 +63,16 @@
     <h1 style="color: blue;">Blue Colour</h1>
 </ng-template>
 <button (click)="changeString()">Change String</button>
+
+<!-- Switch statement -->
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red Colour</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">Green Colour</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue Colour</h1>
+    <h1 *ngSwitchDefault="">Unknown Colour</h1>
+    <br>
+    <button (click)="changeString()">Change String</button>
+</div>
+<!-- For-loop -->
+<h1 *ngFor="let item of users">{{item}}</h1>
+<h2 *ngFor="let details of userDetails">{{details.name}} -- {{details.email}}-- {{details.phone}}</h2>
