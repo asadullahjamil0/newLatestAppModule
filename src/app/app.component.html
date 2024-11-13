@@ -76,3 +76,15 @@
 <!-- For-loop -->
 <h1 *ngFor="let item of users">{{item}}</h1>
 <h2 *ngFor="let details of userDetails">{{details.name}} -- {{details.email}}-- {{details.phone}}</h2>
+
+<!-- Nestep loop -->
+<h1>Nested loop Here</h1>
+<ul *ngFor="let user of employee">
+    <li>Name: {{user.name}}</li>
+    <li>Phone: {{user.email}}</li>
+    <li>Social Accounts</li>
+    <ul *ngFor="let account of user.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+
+</ul>

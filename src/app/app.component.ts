@@ -48,6 +48,12 @@ export class AppComponent {
     { name: 'Husnain', phone: '2723451', email: 'husnain@learn.com' },
     { name: 'Umer', phone: '0923413', email: 'umer@learn.com' },
   ];
+  employee = [
+    { name: 'Asadullah', phone: '9023904', email: 'peter@learn.com', socialAccounts: ['facebook', 'insta', 'twitter'] },
+    { name: 'sam', phone: '6124656', email: 'sam@learn.com', socialAccounts: ['whatsapp', 'twitter', 'insta'] },
+    { name: 'megan', phone: '3462366', email: 'megan@learn.com', socialAccounts: ['insta', 'youtube', 'yahoo'] },
+
+  ];
 
 }
 
