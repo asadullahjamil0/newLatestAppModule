@@ -51,3 +51,15 @@
 <br> <br>
 <button (click)="changeCondition()">Condition Change</button>
 <br> <br>
+<br> <br>
+<!--multiple else-if statements -->
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Colour</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Colour</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Blue Colour</h1>
+</ng-template>
+<button (click)="changeString()">Change String</button>

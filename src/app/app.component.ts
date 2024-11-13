@@ -37,6 +37,10 @@ export class AppComponent {
   changeCondition() {
     this.show === false ? this.show = true : this.show = false;
   }
+  color = 'green';
+  changeString() {
+    this.color === 'green' ? this.color = 'red' : this.color = 'blue';
+  }
 
 }
 
